@@ -11,11 +11,7 @@
 <div id="main">
 
   <div id="fb_bar">
-   	<table>
-      <tr>
-   		<td valign="middle">facebook</td>
-      </tr>
-    </table> 
+  	 <span style="position:absolute;margin-top:20px;">facebook</span>
   </div>
   
   <div id="login_bar">
@@ -50,25 +46,26 @@
   <div id="right">
   	<table id="login_details">
   		  <tr>
-            <td><p style="font-size:30px;font-family:Tahoma,Verdana,Arial Narrow">Sign up<br><font size=3>It's free and always will be</font></p></td>
+            <td><br><span style="font-size:30px;font-family:Tahoma,Verdana,Arial Narrow">Sign up<br><font size=3>It's free and always will be</font></span><br></td>
           </tr>
           <tr>
-            <td><input class="login_details" type="text" name="firstname" value="First name" size="20">
-            <input class="login_details" type="text" name="lastname" value="Last name" size="20"></td>
+            <td><input class="login_details" type="text" name="firstname" placeholder="First name" size="20">
+            <input class="login_details" type="text" name="lastname" placeholder="Last name" size="20"></td>
           </tr>	
           <tr>
-            <td><input class="login_details" type="text" name="userid" value="Email or mobile number" size="42"></td>
+            <td><input class="login_details" type="text" name="userid" placeholder="Email or mobile number" size="42"></td>
           </tr>
           <tr>
-            <td><input class="login_details" type="text" name="userid" value="Re-enter email or mobile number" size="42"></td>
+            <td><input class="login_details" type="text" name="userid" placeholder="Re-enter email or mobile number" size="42"></td>
            </tr>
            <tr>
-            <td><input class="login_details" type="password" name="passwd" value="New Password" size="42"></td>
+            <td><input class="login_details" type="password" name="passwd" placeholder="New password" size="42"></td>
           </tr>
           <tr>
             <td><br><font size=5>Birthday</font><br>
             <select name="Month" title="Month">
-              <font size="6">	
+              <font size="6">
+              <option value="0" selected> Month </option>	
               <option value="1"> Jan </option> <option value="2"> Feb </option>
               <option value="3"> Mar </option> <option value="4"> Apr </option>
               <option value="5"> May </option> <option value="6"> Jun </option>
@@ -78,6 +75,7 @@
               </font>
             </select>
             <select name="Day" title="Day">
+              <option value="0" selected> Day </option>
               <option> 1 </option> <option> 2 </option> <option> 3 </option>
               <option> 4 </option> <option> 5 </option> <option> 6 </option>
               <option> 7 </option> <option> 8 </option> <option> 9 </option>
@@ -91,6 +89,7 @@
               <option>31</option>
             </select>
             <select name="Year" title="Year">
+              <option value="0" selected> Year </option>
               <option> 1950 </option> <option> 1951 </option> <option> 1952 </option>
               <option> 1953 </option>
               <option> 1954 </option> <option> 1955 </option> <option> 1956 </option>
@@ -122,7 +121,7 @@
         	</span>
             </p>
             </td>
-          </tr>          
+          </tr>
   </div>
 </div>
 </body>

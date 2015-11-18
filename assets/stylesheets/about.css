@@ -1,0 +1,243 @@
+td {
+    vertical-align: middle;
+    min-width:100px;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+li {
+    float: left;
+    padding-left:20px;
+    font-family:Arial;
+    color: white;
+}
+
+#main {
+    background-color:gray;
+}
+
+#fb_bar {
+    width:100%;
+    height:40px;
+    background-color:#336699;
+    float:left;
+    font-size:12px;
+    font-family:Arial;
+    color: white;
+    margin:0x;
+    padding:0;
+}
+
+#login_bar {
+    margin:0;
+    padding: 0;
+    width:40%;
+    height:80px; 
+    float:left;
+    background-color:#336699;
+}
+
+#top {
+    width:100%;
+    float:left;
+    height:200px;
+    background-image:url("http://dl.glitter-graphics.com/pub/362/362453c87ya4kzgs.gif");
+    background-attachment: none;
+}
+
+#profile_pic {
+    width:200px;
+    float:left;
+    height:170px;
+    border: 0px;
+    margin: 0px auto;
+    margin-top:40px;
+    margin-left: 15px;
+    position: relative;
+    border-style: double;
+    border: 5px solid white;
+}
+
+#main_nav {
+    float:left;
+    height:40px;
+    border: 0px;
+    margin: 0px auto;
+    padding: 0px;
+    position: relative;
+    color: white;
+    font-family:Arial;
+    font-size:20px;
+    border-collapse:collapse;
+    border-top: none;
+}
+
+.navbar {
+   border: 1px solid #E0E0E0;
+   border-collapse: collapse;
+   border-top: none;
+   border-bottom: none;
+   text-align: center;
+   font-size:15px;
+   font-family:Arial;
+}
+
+.navbar td {
+   text-align: center;
+   font-size:15px;
+   font-family:Arial;
+   color: white;
+   min-width: 30px;
+}
+
+#about_info a {
+    color:gray;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+#about_info ul li {
+    margin-top:25px;
+    margin-right:10px;
+}
+nav ul li {
+    border-left: 1px solid #202020;
+    display: inline;
+}
+
+#main_nav_bar {
+    width:100%;
+    height:50px;
+    float:left;
+    border:thin;
+    background-color:white;
+}
+
+
+#about_bar {
+    width:100%;
+    height:55px;
+    float:left;
+    margin: 0px auto;
+    border: 1px solid #E0E0E0;
+    background-color:#E8E8E8;
+    position: relative;;
+    margin-top: 10px;
+}
+
+#about_left_bar {
+    width:28%;
+    height:600px;
+    float:left;
+    margin: 0px auto;
+    border: 1px solid #E0E0E0;
+}
+
+#about_right_bar {
+    width:71.5%;
+    height:600px;
+    float:left;
+    margin: 0px auto;
+    border: 1px solid #E0E0E0;
+}
+
+#friends_details {
+    width:99.5%;
+    height:600px;
+    float:left;
+    margin:0px auto;
+    border:1px solid black;
+}
+
+.friends_details_td {
+    min-width:460px;
+    border:1px solid black;
+    text-align:center;
+    vertical-align:middle;
+    position: relative;
+}
+
+.friends_details_tr {
+    height:150px;
+    position:relative;
+}
+
+#left {
+    width:8%;
+    height:900px;
+    float:left;
+    background-color:#f2f2f2;
+}
+
+#middle {
+    width:75%;
+    height:900px;
+    float:left;
+    background-color:#f2f2f2;
+}
+
+#right {
+    width:17%;
+    height:900px;
+    float:left;
+    background-color:#f2f2f2;
+}
+
+#login {
+    font-size:70%;
+    font-family:Arial;
+    color: white;
+}
+
+a:link {
+   text-decoration:none;
+   color:white;
+   font-family: Arial;
+}
+
+#search_details {
+    border-radius:3px;
+    font-size:13px;
+    font-family:Arial;
+    color: gray;
+}
+
+.unfriend {
+    background-color: #ccc;
+    border-radius:5px;
+    color:blue;
+    font-family:'Arial';
+    font-size:15px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    float: right;
+    position: absolute;
+    top:70px;
+    right:50px; 
+}
+
+.friend_name {
+    margin-left:8px;
+    font-family:'Arial';
+    font-color:black;
+    font-size:15px;
+    position: absolute;
+    top:70px;
+    left:170px; 
+}
+
+.friend_img {
+    width:150px;
+    height:150px;
+    border:1px;
+    vertical-align:middle;
+    float:left;
+    clear: both;
+    overflow:hidden;
+}
