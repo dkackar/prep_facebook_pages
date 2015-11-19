@@ -1,10 +1,21 @@
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
 td {
     vertical-align: middle;
     min-width:100px;
 }
 
 ul {
-    list-style-type: none;
+    list-style-type:none;
     margin:0;
     padding:0;
     overflow:hidden;
@@ -15,6 +26,45 @@ li {
     padding-left:20px;
     font-family:Arial;
     color: white;
+}
+
+nav ul li {
+    border-left: 1px solid #202020;
+    display: inline;
+}
+
+p span {
+    font-family: "Arial", Verdana, sans-serif;
+    font-color:black;
+    font-size:12px;
+}
+
+/* unvisited link */
+a:link {
+   text-decoration:underline;
+   color:blue;
+   font-family: Arial,Verdana,sans-serif;
+}
+
+/* visited link */
+a:visited {
+    color:blue;
+    text-decoration:underline;
+    font-family: Arial,Verdana,sans-serif;
+}
+
+/* mouse over link */
+a:hover {
+    color:blue;
+    text-decoration: underline;
+    font-family: Arial,Verdana,sans-serif;
+}
+
+/* selected link */
+a:active {
+    color:navy;
+    text-decoration: underline;
+    font-family: Arial,Verdana,sans-serif;
 }
 
 /* unvisited link */
@@ -28,50 +78,123 @@ li {
    color:white;
    font-family: Arial,Verdana,sans-serif;
 }
-
 /* unvisited link */
-a:link {
-   text-decoration:none;
-   color:blue;
+.fb_link:hover {
+   text-decoration:underline;
+   color:white;
    font-family: Arial,Verdana,sans-serif;
 }
 
-/* visited link */
-a:visited {
-    color:white;
+.fb_link:active {
+   text-decoration:underline;
+   color:white;
+   font-family: Arial,Verdana,sans-serif;
 }
 
-/* mouse over link */
-a:hover {
+.navbar {
+   border: 1px solid #E0E0E0;
+   border-collapse: collapse;
+   border-top: none;
+   border-bottom: none;
+   text-align: center;
+   font-size:15px;
+   font-family:Arial;
+}
+
+.navbar td {
+   text-align:center;
+   font-size:15px;
+   font-family:Arial;
+   color: white;
+   min-width:30px;
+}
+
+.friends_details_td {
+    min-width:460px;
+    border:1px solid black;
+    text-align:center;
+    vertical-align:middle;
+    position: relative;
+    background-color:#f2f2f2;
+}
+
+.active_friends_details_td {
+    text-align:left;
+}
+
+.friends_details_tr {
+    height:150px;
+    position:relative;
+}
+
+.unfriend {
+    background-color: #ccc;
+    border-radius:5px;
     color:blue;
-    text-decoration:none;
-    text-decoration: underline;
-    font-family: Arial,Verdana,sans-serif;
+    font-family:'Arial';
+    font-size:15px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    float: right;
+    position: absolute;
+    top:70px;
+    right:50px; 
 }
 
-/* selected link */
-a:active {
-    color:navy;
-    text-decoration: underline;
-    font-family: Arial,Verdana,sans-serif;
+.friend_name {
+    margin-left:10px;
+    font-family:'Arial';
+    font-color:black;
+    font-size:15px;
+    position: absolute;
+    top:70px;
+    left:150px;
 }
 
-p span {
-    font-family: "Arial", Verdana, sans-serif;
+.active_friend_name {
+    font-family:'Arial';
+    font-color:black;
+    font-size:12px;
+    margin-left: 5px;
+}
+
+.friend_img {
+    width:150px;
+    height:150px;
+    border:1px;
+    vertical-align:middle;
+    float:left;
+    clear: both;
+    overflow:hidden;
+}
+
+.active_friend_img {
+    width:90px;
+    height:80px;
+    border:1px;
+    vertical-align:middle;
+    float:left;
+    clear: both;
+    overflow:hidden;
+    display: block;
+    margin-top: 5px;
+}
+
+.split-para {
+    text-align:left;
+    display:block;
+    margin-left:10px;
     font-color:black;
     font-size:12px;
 }
 
-.link_display {
-   text-decoration:underline;
-   color:black;
-   font-family: Arial,Verdana,sans-serif;
+.split-para span { 
+    display:block;
+    float:right;
+    margin-left:10px;
 }
 
-/* visited link */
-a:underline {
-    color:blue;
-}
 #main {
     background-color:#ecf2f9;
 }
@@ -105,19 +228,6 @@ a:underline {
     background-attachment: none;
 }
 
-#profile_pic {
-    width:200px;
-    float:left;
-    height:170px;
-    border:0px;
-    margin:0px auto;
-    margin-top:40px;
-    margin-left:15px;
-    position:relative;
-    border-style:double;
-    border:5px solid white;
-}
-
 #main_nav {
     float:left;
     height:40px;
@@ -132,37 +242,29 @@ a:underline {
     border-top: none;
 }
 
-.navbar {
-   border: 1px solid #E0E0E0;
-   border-collapse: collapse;
-   border-top: none;
-   border-bottom: none;
-   text-align: center;
-   font-size:15px;
-   font-family:Arial;
-}
-
-.navbar td {
-   text-align: center;
-   font-size:15px;
-   font-family:Arial;
-   color: white;
-   min-width: 30px;
+#profile_pic {
+    width:200px;
+    float:left;
+    height:170px;
+    border:0px;
+    margin:0px auto;
+    margin-top:40px;
+    margin-left:15px;
+    position:relative;
+    border-style:double;
+    border:5px solid white;
 }
 
 #about_info a {
     color:gray;
-    font-size: 15px;
-    font-family: Arial;
+    font-size:15px;
+    font-family:Arial;
+    margin-right:20px; 
 }
 
 #about_info ul li {
     margin-top:25px;
     margin-right:10px;
-}
-nav ul li {
-    border-left: 1px solid #202020;
-    display: inline;
 }
 
 #main_nav_bar {
@@ -202,7 +304,7 @@ nav ul li {
 
 #friends_details {
     width:99.5%;
-    height:600px;
+    height:1900px;
     float:left;
     margin:0px auto;
     border:1px solid black;
@@ -215,32 +317,6 @@ nav ul li {
     margin:0px auto;
     border:1px solid black;
     background-color:#e6e6e6;
-}
-
-.friends_details_td {
-    min-width:460px;
-    border:1px solid black;
-    text-align:center;
-    vertical-align:middle;
-    position: relative;
-}
-
-.active_friends_details_td {
-    text-align:left;
-}
-
-
-.friends_details_td {
-    min-width:30%;
-    border:1px solid black;
-    text-align:center;
-    vertical-align:middle;
-    position: relative;
-}
-
-.friends_details_tr {
-    height:150px;
-    position:relative;
 }
 
 #left {
@@ -278,21 +354,6 @@ nav ul li {
     color: gray;
 }
 
-.unfriend {
-    background-color: #ccc;
-    border-radius:5px;
-    color:blue;
-    font-family:'Arial';
-    font-size:15px;
-    text-decoration: none;
-    cursor: pointer;
-    border:none;
-    float: right;
-    position: absolute;
-    top:70px;
-    right:50px; 
-}
-
 #post {
     background-color:#3973ac;
     border-radius:3px;
@@ -303,53 +364,4 @@ nav ul li {
     cursor:pointer;
     border:none;
     float:right;
-}
-
-.friend_name {
-    margin-left:8px;
-    font-family:'Arial';
-    font-color:black;
-    font-size:15px;
-    position: absolute;
-    top:70px;
-    left:170px; 
-}
-
-.active_friend_name {
-    font-family:'Arial';
-    font-color:black;
-    font-size:12px;
-    margin-left: 5px;
-}
-
-.friend_img {
-    width:150px;
-    height:150px;
-    border:1px;
-    vertical-align:middle;
-    float:left;
-    clear: both;
-    overflow:hidden;
-}
-
-.active_friend_img {
-    width:90px;
-    height:80px;
-    border:1px;
-    vertical-align:middle;
-    float:left;
-    clear: both;
-    overflow:hidden;
-    display: block;
-    margin-top: 5px;
-}
-
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
 }
